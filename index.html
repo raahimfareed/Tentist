@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,41 +15,163 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/materialize/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/main/main.css">
 
 </head>
-<body>
+
+<body class="grey lighten-2 ">
+    <!-- Top Navigation -->
     <div class="navbar-fixed">
         <nav class="grey darken-4">
             <div class="nav-wrapper">
                 <div class="container">
-                    <a href="index.html" class="brand-logo">Tentist <small><small>Alpha</small></small></a>
-                    <a href="#!" class="sidenav-trigger right" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+                    <a href="./index.php" class="brand-logo center">Tentist <small><small>Alpha</small></small></a>
+                    <a href="#!" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+                    <ul class="hide-on-med-and-down">
+                        <li class="active"><a href="./index.php">Home</a></li>
+                        <li><a href="./about.php">About</a></li>
+                        <li><a href="./contact.php">Contact</a></li>
+                    </ul>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li>|</li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="signup.html">Signup</a></li>
+                        <li><a href="./login.php">Login</a></li>
+                        <li><a href="./signup.php">Signup</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
 
-    <!-- SIDENAV MOBILE NAV -->
-    <ul class="sidenav" id="mobile-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><hr></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="signup.html">Signup</a></li>
+    <!-- Mobile Side Nav -->
+    <ul class="sidenav grey darken-4" id="mobile-nav">
+        <li class="active"><a href="./index.php" class="grey-text text-lighten-3">Home</a></li>
+        <li><a href="./about.php" class="grey-text text-lighten-3">About</a></li>
+        <li><a href="./contact.php" class="grey-text text-lighten-3">Contact</a></li>
+        <li>
+            <hr>
+        </li>
+        <li><a href="./login.php" class="grey-text text-lighten-3">Login</a></li>
+        <li><a href="./signup.php" class="grey-text text-lighten-3">Signup</a></li>
     </ul>
+
+    <main>
+        <!-- Main Frontpage -->
+        <div class="parallax-container">
+            <div class="parallax"><img src="https://source.unsplash.com/1600x900/?laptop,mobile"
+                    class="main-banner hide-on-med-and-down" width="100"></div>
+            <div class="parallax"><img src="https://source.unsplash.com/900x1600/?mobile,laptop" class="main-banner hide-on-large-only"
+                    width="100"></div>
+            <div class="container white-text">
+                <h1 class="hide-on-med-and-down">Tentist</h1>
+                <h1 class="hide-on-large-only center-align">Tentist</h1>
+                <p class="flow-text hide-on-med-and-down">Instant Messaging Platform</p>
+                <p class="flow-text hide-on-large-only center-align">Instant Messaging Platform</p>
+                <div class="row">
+                    <div class="col s12 l6">
+                        <br>
+                        <p>Welcome to Tentist&trade;, a new and innovative instant messaging social platform!</p>
+                        <p class="hide-on-med-and-down">Login/Signup now to start texting</p>
+                        <p class="hide-on-large-only center-align">Login/Signup now to start texting</p>
+                        <p class="hide-on-med-and-down">
+                            <a href="./login.php"
+                                class="main-login-btn main-btn btn blue darken-2 waves-effect">Login</a>
+                            <a href="./signup.php" class="waves-effect btn main-btn blue darken-3">Signup</a>
+                        </p>
+                        <p class="hide-on-large-only center-align">
+                            <a href="./login.php"
+                                class="main-login-btn main-btn btn blue darken-2 waves-effect">Login</a>
+                            <a href="./signup.php" class="waves-effect btn main-btn blue darken-3">Signup</a>
+                        </p>
+                        <p><small>
+                                Please note, Tentist is still under development, the name and design is not final. Some
+                                pages will not work because either they haven't been built yet or they haven't been
+                                completed yet.
+                                There are a noticable amount of bugs in this. If you find any bugs, please click <a
+                                    href="./contact/contact.php"><i>here</i></a> or click <kbd><i>bug report</i></kbd>
+                                in the footer!
+                                <br>
+                                Thank you for your cooperation
+                            </small></p>
+                    </div>
+                    <div class="col s12 l6">
+                        <div class="card-panel white-text grey darken-4">
+                            <h4 class="flow-text center-align">Subscribe to our newsletter!</h2>
+                                <div class="card-panel grey darken-3">
+                                    <form action="./includes/newslettersub.inc.php" method="post">
+                                        <div class="input-field">
+                                            <input type="email" id="user_email" name="user_email"
+                                                class="validate white-text" required>
+                                            <label for="user_email">Email</label>
+                                            <small class="helper-text grey-text">We will never share your email with
+                                                anyone else!</small>
+                                        </div>
+                                        <p class="right-align"><button
+                                                class="btn-floating btn-flat btn-large blue waves-effect darken-3"
+                                                type="submit" name="submit"><i class="material-icons">send</i></button>
+                                        </p>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4">
+                    <span class="hide-on-med-and-down left-align">
+                        <h5>Tentist</h5>
+                        <p>Instant Messaging Platform</p>
+                    </span>
+                    <span class="hide-on-large-only center-align">
+                        <h5>Tentist</h5>
+                        <p>Instant Messaging Platform</p>
+                    </span>
+                </div>
+                <div class="col s6 l4">
+                    <ul>
+                        <li>
+                            <h6>Navigation Links</h6>
+                        </li>
+                        <li><a href="home.html" class="grey-text">Home</a></li>
+                        <li><a href="about.html" class="grey-text">About</a></li>
+                        <li><a href="contact.html" class="grey-text">Contact</a></li>
+                        <li><a href="login.html" class="grey-text">Login</a></li>
+                        <li><a href="signup.html" class="grey-text">Signup</a></li>
+                    </ul>
+                </div>
+                <div class="col s6 l4">
+                    <ul>
+                        <li>
+                            <h6>Other</h6>
+                        </li>
+                        <li><a href="faq.html" class="grey-text">FAQs</a></li>
+                        <li><a href="developers.html" class="grey-text">Bug Report</a></li>
+                        <li><a href="credits.html" class="grey-text">Credits</a></li>
+                        <li><a href="http://bech.pk/" class="grey-text" target="_blank">Bech.pk</a></li>
+                        <li><a href="jobs.html" class="grey-text">Work with us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black">
+            <div class="container">
+                &copy; Copyright Reserved Tentist.
+                <a href="./admin.php" class="right grey-text">Admin</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- JS -->
     <script src="assets/js/materialize/materialize.min.js"></script>
     <!-- Init -->
     <script src="assets/js/init/auto.init.js"></script>
 </body>
+
 </html>
