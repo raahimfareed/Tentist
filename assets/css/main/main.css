@@ -1,0 +1,9 @@
+.parallax-container {
+  height: auto;
+}
+
+.main-banner {
+  -webkit-filter: brightness(10%);
+          filter: brightness(10%);
+}
+/*# sourceMappingURL=main.css.map */
