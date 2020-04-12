@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentist: Social Media Platform</title>
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/materialize/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/main/main.css">
+
+</head>
+
+<body class="grey lighten-2 ">
+    <!-- Top Navigation -->
+    <div class="navbar-fixed">
+        <nav class="grey darken-4">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="./index.html" class="brand-logo">Tentist <small><small>Alpha</small></small></a>
+                    <a href="#!" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="./index.html">Home</a></li>
+                        <li class="active"><a href="./contact.html">Contact</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a href="./signup.html" class="btn grey darken-2">Signup</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile Side Nav -->
+    <ul class="sidenav grey darken-4" id="mobile-nav">
+        <li><a href="./index.html" class="grey-text text-lighten-3">Home</a></li>
+        <li class="active"><a href="./contact.html" class="grey-text text-lighten-3">Contact</a></li>
+        <li><hr></li>
+        <li class="active"><a href="./login.html" class="grey-text text-lighten-3">Login</a></li>
+        <li><a href="./signup.html" class="grey-text text-lighten-3">Signup</a></li>
+    </ul>
+
+    <main>
+        <!-- Main Frontpage -->
+        <div class="parallax-container">
+            <div class="parallax"><img src="https://source.unsplash.com/1600x900/?laptop,mobile"
+                class="main-banner hide-on-med-and-down" width="100"></div>
+        <div class="parallax"><img src="https://source.unsplash.com/900x1600/?mobile,laptop" class="main-banner hide-on-large-only"
+                width="100"></div>
+            <div class="row">
+                <div class="col s12 m6 offset-m3 grey-text text-lighten-3">
+                    <h1 class="hide-on-med-and-down">Tentist</h1>
+                    <h1 class="hide-on-large-only center-align">Tentist</h1>
+                    <p class="flow-text hide-on-med-and-down">Contact Us</p>
+                    <p class="flow-text hide-on-large-only center-align">Contact Us</p>
+                </div>
+            </div>
+            <div class="row login-row">
+                <div class="col s12 m6 offset-m3 grey darken-4 grey-text text-lighten-4">
+                    <p class="flow-text center-align">
+                        Please Input Details
+                    </p>
+                    <div class="row login-row">
+                        <form action="./includes/user/contact.inc.php" method="post">
+                            <div class="col s12 m10 offset-m1">
+                                <div class="input-field">
+                                    <input type="text" name="userFull" id="userFull" class="validate white-text" required />
+                                    <label for="userFull">Full Name*</label>
+                                </div>
+                                <div class="input-field">
+                                    <input type="text" name="userUID" id="userUID" class="white-text" />
+                                    <label for="userUID">Username</label>
+                                    <small class="helper-text right-align grey-text">Provide your username if you have an account!</small>
+                                </div>
+                                <div class="input-field">
+                                    <select name="userOption" id="userOption" class="validate white-text" required>
+                                        <option value="" disabled selected required> -- Please Choose an Option -- </option>
+                                        <option value="glitch">Glitch in website</option>
+                                        <option value="bug">Bug hunting</option>
+                                        <option value="security">Security Threat/Breach</option>
+                                        <option value="user">Reporting a User</option>
+                                        <option value="suggestion">Suggestion</option>
+                                    </select>
+                                    <label for="userOption">Choose an Option*</label>
+                                </div>
+                                <div class="input-field">
+                                    <textarea name="userQuery" id="userQuery" class="validate white-text materialize-textarea" required></textarea>
+                                    <label for="userQuery">Query*</label>
+                                </div>
+                                <div class="row">
+                                    <div class="col s12">
+                                        <p class="right-align">
+                                            <button type="submit" name="submit"
+                                                class="btn waves-effect indigo darken-4">Login</button>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer grey darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 l4">
+                    <span class="hide-on-med-and-down left-align">
+                        <h5>Tentist</h5>
+                        <p>Instant Messaging Platform</p>
+                    </span>
+                    <span class="hide-on-large-only center-align">
+                        <h5>Tentist</h5>
+                        <p>Instant Messaging Platform</p>
+                    </span>
+                </div>
+                <div class="col s6 l4">
+                    <ul>
+                        <li>
+                            <h6>Navigation Links</h6>
+                        </li>
+                        <li><a href="home.html" class="grey-text">Home</a></li>
+                        <li><a href="about.html" class="grey-text">About</a></li>
+                        <li><a href="contact.html" class="grey-text">Contact</a></li>
+                        <li><a href="login.html" class="grey-text">Login</a></li>
+                        <li><a href="signup.html" class="grey-text">Signup</a></li>
+                    </ul>
+                </div>
+                <div class="col s6 l4">
+                    <ul>
+                        <li>
+                            <h6>Other</h6>
+                        </li>
+                        <li><a href="faq.html" class="grey-text">FAQs</a></li>
+                        <li><a href="developers.html" class="grey-text">Bug Report</a></li>
+                        <li><a href="credits.html" class="grey-text">Credits</a></li>
+                        <li><a href="http://bech.pk/" class="grey-text" target="_blank">Bech.pk</a></li>
+                        <li><a href="jobs.html" class="grey-text">Work with us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright black">
+            <div class="container">
+                &copy; Copyright Reserved Tentist.
+                <a href="admin.php" class="right grey-text">Admin</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="assets/js/materialize/materialize.min.js"></script>
+    <!-- Init -->
+    <script src="assets/js/init/auto.init.js"></script>
+</body>
+
+</html>
